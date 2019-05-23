@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//APache Software Foundation//DTD Struts Configuration 2.3//EN"
+"https://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<package name="com.practice.action" extends="struts-default">
+
+	<action name="StartAction" class="com.misaki.cobr.action.StartAction" method="execute">
+		<result name="success">first.jsp</result>
+	</action>
+
+	<action name="FirstShotAction" class="com.misaki.cobr.action.FirstShotAction" method="execute">
+		<result name="success">second.jsp</result>
+		<result name="error">first.jsp</result>
+		<result name="clear">clear.jsp</result>
+	</action>
+
+	<action name="SecondShotAction" class="com.misaki.cobr.action.SecondShotAction" method="execute">
+		<result name="success">third.jsp</result>
+		<result name="error">second.jsp</result>
+		<result name="clear">clear.jsp</result>
+	</action>
+	<action name="ThirdShotAction" class="com.misaki.cobr.action.ThirdShotAction" method="execute">
+		<result name="success">forth.jsp</result>
+		<result name="error">third.jsp</result>
+		<result name="clear">clear.jsp</result>
+	</action>
+	<action name="ForthShotAction" class="com.misaki.cobr.action.ForthShotAction" method="execute">
+		<result name="success">fifth.jsp</result>
+		<result name="error">forth.jsp</result>
+		<result name="clear">clear.jsp</result>
+	</action>
+	<action name="FifthShotAction" class="com.misaki.cobr.action.FifthShotAction" method="execute">
+		<result name="success">notClear.jsp</result>
+		<result name="error">fifth.jsp</result>
+		<result name="clear">clear.jsp</result>
+	</action>
+	<action name="RankingAction" class="com.misaki.cobr.action.RankingAction" method="execute">
+		<result name="success">ranking.jsp</result>
+	</action>
+	<action name="RankingCompleteAction" class="com.misaki.cobr.action.RankingCompleteAction" method="execute">
+		<result name="success">rankingComplete.jsp</result>
+	</action>
+	<action name="GoHomeAction" class="com.misaki.cobr.action.GoHomeAction" method="execute">
+		<result name="success">home.jsp</result>
+	</action>
+	</package>
+
+</struts>
