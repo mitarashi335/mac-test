@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Oh yeah!</h1>
-
-<s:property value="name"/>
-<s:text name="pass"/>
+ <h1>aa</h1>
+ <s:form action="UserCreateAction">
+ 	<s:submit value="asas"/>
+ </s:form>
 </body>
 </html>

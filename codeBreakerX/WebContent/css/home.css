@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#explain{
+	float:left;
+	height: 60vh;
+	width: 45%;
+    text-align: center;
+    font-size: 15px;
+    border:1px solid red;
+}
+
+.emphasis{
+    font-size: 20px;
+    color: maroon;
+}
+.A{
+	height: 60vh;
+	float:left;
+	width: 30%;
+	opacity: 0.0;
+	text-align: center;
+	border:1px solid red;
+	background-color:#fa8072;
+}
+#under{
+	height: auto;
+	clear:both;
+	width:auto;
+}

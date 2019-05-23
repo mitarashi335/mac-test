@@ -8,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Oh yeah!</h1>
-
-<s:property value="name"/>
-<s:text name="pass"/>
+<jsp:include page="header.jsp"/>
+<h1>Don't mind!!!</h1>
+<s:form action="GoHomeAction">
+	<s:submit value="ホームへ"/>
+</s:form>
 </body>
 </html>

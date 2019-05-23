@@ -8,9 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Oh yeah!</h1>
-
-<s:property value="name"/>
-<s:text name="pass"/>
+<div id="header">
+	<h1>CODE BREAKER!!</h1>
+	<h2>〜数字当てゲーム〜</h2>
+</div>
 </body>
 </html>

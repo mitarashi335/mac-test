@@ -10,7 +10,7 @@
 <body>
 <h1>error</h1>
 
-<s:text name="name"/>
+<s:property value="name"/>
 <s:text name="pass"/>
 </body>
 </html>

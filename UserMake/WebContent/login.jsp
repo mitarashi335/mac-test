@@ -5,12 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Start</title>
 </head>
 <body>
-<h1>Oh yeah!</h1>
-
-<s:property value="name"/>
-<s:text name="pass"/>
+	<s:form action="CreateUserAction">
+		<s:submit value="新規ユーザー登録"/>
+	</s:form>
 </body>
 </html>
