@@ -32,6 +32,7 @@ public class StartAction extends ActionSupport implements SessionAware{
 			session.put("second", answer[1]);
 		//三桁目
 			session.put("third", answer[2]);
+			StartAction.Count=0;
 		//test
 			System.out.println("first");
 			System.out.println(session.get("first"));

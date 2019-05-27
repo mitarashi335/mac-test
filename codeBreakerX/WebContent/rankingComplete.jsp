@@ -13,5 +13,8 @@
 <form action="GoHomeAction">
 	<s:submit value="ホームへ戻る"/>
 </form>
+<form action="FinRankingAction">
+	<s:submit value="ランキングへ"/>
+</form>
 </body>
 </html>

@@ -11,6 +11,7 @@ public class FifthShotAction extends ActionSupport implements SessionAware {
 	public String secondAnswer;
 	public String thirdAnswer;
 	public static final String CLEAR = "clear";
+	public static final String SESSIONTO = "sessionTimeOut";
 	private Map<String, Object> session;
 	private int tryFivea;
 	private int tryFiveb;
@@ -39,6 +40,9 @@ public class FifthShotAction extends ActionSupport implements SessionAware {
 		System.out.println(session.get("tryFiveb"));
 		System.out.println("tryFivec");
 		System.out.println(session.get("tryFivec"));
+		if(session.isEmpty()) {
+			return SESSIONTO;
+		}
 		StartAction.Count++;
 		//test
 		System.out.println("answerCount");
@@ -89,14 +93,16 @@ public class FifthShotAction extends ActionSupport implements SessionAware {
 		if(session.get("tryOnea") == session.get("tryOneb")
 				|| session.get("tryOneb") == session.get("tryOnec")
 				|| session.get("tryOnea") == session.get("tryOnec")){
-					sameNumberErrorMessage ="同じ数字が使われています。異なる３つの数字を入れてください。";
-					System.out.println(sameNumberErrorMessage);
-					result = ERROR;
+				sameNumberErrorMessage ="同じ数字が使われています。異なる３つの数字を入れてください。";
+				System.out.println(sameNumberErrorMessage);
+				StartAction.Count--;
+				result = ERROR;
 				}
 		if (firstAnswer == "hit"
 			&& secondAnswer == "hit"
 			&& thirdAnswer == "hit") {
 			result = CLEAR;
+			session.put("clearFlag", "1");
 		}
 		return result;
 	}

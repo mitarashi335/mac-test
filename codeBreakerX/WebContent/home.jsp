@@ -28,13 +28,17 @@ Blow:2<br>
 の場合,数字３つは合っているが、<br>
 位置が合っていない(非常に惜しい)状態。
 </div>
+
 <div id="under">
-<button>見本</button>
-
-
+	<div class="sample">
+		<s:submit value="見本" class="btn"/>
+	</div>
 	<s:form action="StartAction">
-		<s:submit value="START" />
+		<s:submit value="START" class="btn"/>
 	</s:form>
+	<form action="FinRankingAction">
+		<s:submit value="ランキングへ" class="btn" />
+	</form>
 </div>
 	<script src="./js/home.js"></script>
 </body>

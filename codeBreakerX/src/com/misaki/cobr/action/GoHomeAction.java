@@ -37,6 +37,9 @@ public class GoHomeAction extends ActionSupport implements SessionAware{
 		session.remove("blowCount2");
 		session.remove("blowCount3");
 		session.remove("blowCount4");
+		session.remove("rankName");
+		session.remove("answerTimes");
+		session.remove("clearFlag");
 
 		return  SUCCESS;
 	}

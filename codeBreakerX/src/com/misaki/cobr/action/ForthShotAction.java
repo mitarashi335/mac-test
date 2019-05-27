@@ -13,6 +13,7 @@ public class ForthShotAction extends ActionSupport implements SessionAware {
 	public String secondAnswer;
 	public String thirdAnswer;
 	public static final String CLEAR = "clear";
+	public static final String SESSIONTO = "sessionTimeOut";
 	private Map<String, Object> session;
 	private int tryFoura;
 	private int tryFourb;
@@ -41,6 +42,9 @@ public class ForthShotAction extends ActionSupport implements SessionAware {
 		System.out.println(session.get("tryFourb"));
 		System.out.println("tryFourc");
 		System.out.println(session.get("tryFourc"));
+		if(session.isEmpty()) {
+			return SESSIONTO;
+		}
 		StartAction.Count++;
 		//test
 		System.out.println("answerCount");
@@ -91,14 +95,16 @@ public class ForthShotAction extends ActionSupport implements SessionAware {
 		if (session.get("tryFoura") == session.get("tryFourb")
 			|| session.get("tryFourb") == session.get("tryFourc")
 			|| session.get("tryFoura") == session.get("tryFourc")) {
-				sameNumberErrorMessage = "同じ数字が使われています。異なる３つの数字を入れてください。";
-				System.out.println(sameNumberErrorMessage);
+			sameNumberErrorMessage = "同じ数字が使われています。異なる３つの数字を入れてください。";
+			System.out.println(sameNumberErrorMessage);
+			StartAction.Count--;
 			result = ERROR;
 		}
 		if (firstAnswer == "hit"
 				&& secondAnswer == "hit"
 				&& thirdAnswer == "hit") {
 			result = CLEAR;
+			session.put("clearFlag", "1");
 		}
 		return result;
 	}

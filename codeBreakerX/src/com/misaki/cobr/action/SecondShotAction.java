@@ -12,6 +12,7 @@ public class SecondShotAction extends ActionSupport implements SessionAware {
 	public String secondAnswer;
 	public String thirdAnswer;
 	public static final String CLEAR = "clear";
+	public static final String SESSIONTO = "sessionTimeOut";
 	private Map<String, Object> session;
 	private int tryTwoa;
 	private int tryTwob;
@@ -40,6 +41,9 @@ public class SecondShotAction extends ActionSupport implements SessionAware {
 		System.out.println(session.get("tryTwob"));
 		System.out.println("tryTwoc");
 		System.out.println(session.get("tryTwoc"));
+		if(session.isEmpty()) {
+			return SESSIONTO;
+		}
 		StartAction.Count++;
 		//test
 		System.out.println("answerCount");
@@ -93,12 +97,14 @@ public class SecondShotAction extends ActionSupport implements SessionAware {
 		|| session.get("tryTwoa") == session.get("tryTwoc")){
 			sameNumberErrorMessage ="同じ数字が使われています。異なる３つの数字を入れてください。";
 			System.out.println(sameNumberErrorMessage);
+			StartAction.Count--;
 			result = ERROR;
 		}
 		if (firstAnswer == "hit"
 			&& secondAnswer == "hit"
 			&& thirdAnswer == "hit") {
 			result = CLEAR;
+			session.put("clearFlag", "1");
 		}
 		return result;
 	}

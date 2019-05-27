@@ -5,12 +5,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./css/header.css">
 <title>Insert title here</title>
 </head>
 <body>
 <div id="header">
-	<h1>CODE BREAKER!!</h1>
-	<h2>〜数字当てゲーム〜</h2>
+	<div id="title">
+		CODE BREAKER!!
+	</div>
+	<div id="subtitle">
+		〜数字当てゲーム〜
+	</div>
 </div>
 </body>
 </html>

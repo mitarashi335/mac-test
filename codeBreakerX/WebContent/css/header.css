@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#title{
+	height:10vh;
+	width:100vw;
+	color:lightsalmon;
+	font-size:10vh;
+}
+#header{
+	height:20vh;
+	background-color:#800000;
+}
+#subtitle{
+	height:5vh;
+	color:lightsalmon;
+	font-size:5vh;
+}

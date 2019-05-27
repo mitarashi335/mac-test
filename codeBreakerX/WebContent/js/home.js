@@ -1,6 +1,6 @@
 
 $(function(){
-	$('button').hover(
+	$('.sample').hover(
 		function(){
 			$(".A").fadeIn();
 			$(".A").animate({opacity:1.0});

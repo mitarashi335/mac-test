@@ -9,16 +9,6 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
-<!-- ランキング5位まで表示したい -->
-
-<br>
-<!-- 文字エラー等を後々記載 -->
-<s:if test="rankNameErrorMessageList != null && rankNameErrorMessageList.size() > 0">
-<div>
-	<s:iterator value="rankNameErrorMessageList" ><s:property /><br></s:iterator>
-</div>
-</s:if>
-<s:else>
 <table>
 	<thead>
 	<tr>
@@ -28,7 +18,7 @@
 	</tr>
 	</thead>
 	<tbody>
-	<s:iterator value="rankInfoList">
+	<s:iterator value="finRankInfoList">
 	<tr>
 		<td><s:property value="ranking"/></td>
 		<td><s:property value="rankName"/></td>
@@ -36,17 +26,10 @@
 	</tr>
 	</s:iterator>
 	</tbody>
-</table>
-</s:else>
-<!-- ランキング入力 -->
-<s:form action="RankingCompleteAction">
-	<table>
-		<tr>
-			<th scope="row">名</th>
-			<td><s:textfield name="rankName" value=""/></td>
-		</tr>
-	</table>
-	<s:submit value="登録" />
+</table><br>
+<p>この順位は解答回数で同列だった場合、解答できた速さで登録されます。</p>
+<s:form action="GoHomeAction">
+	<s:submit value="ホームへ"/>
 </s:form>
 </body>
 </html>
