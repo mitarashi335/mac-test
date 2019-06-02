@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./css/common.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
 </table><br>
 <p>この順位は解答回数で同列だった場合、解答できた速さで登録されます。</p>
 <s:form action="GoHomeAction">
-	<s:submit value="ホームへ"/>
+	<s:submit value="ホームへ" cssClass="btn"/>
 </s:form>
 </body>
 </html>

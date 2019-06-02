@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./css/common.css">
 <title>初回解答画面</title>
 </head>
 <body>
@@ -15,15 +16,15 @@
 </div>
 </s:if>
 
-<s:form action="FirstShotAction">
+<s:form action="FirstShotAction" theme="simple">
 	<table>
 		<tr>
-			<th scope="col">一桁目</th>
-			<th scope="col">二桁目</th>
-			<th scope="col">三桁目</th>
+			<th scope="col" class="shot">一桁目</th>
+			<th scope="col" class="shot">二桁目</th>
+			<th scope="col" class="shot">三桁目</th>
 		</tr>
 		<tr>
-			<td><select name="tryOnea" >
+			<td class="shot"><select name="tryOnea" >
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -31,7 +32,7 @@
 				<option value="5">5</option>
 				<option value="6">6</option>
 			</select></td>
-			<td><select name="tryOneb" >
+			<td class="shot"><select name="tryOneb" >
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -39,7 +40,7 @@
 				<option value="5">5</option>
 				<option value="6">6</option>
 			</select></td>
-			<td><select name="tryOnec" >
+			<td class="shot"><select name="tryOnec" >
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -48,7 +49,9 @@
 				<option value="6">6</option>
 			</select></td>
 		</tr>
-		<s:submit value="ショット"/>
+		<tr>
+			<td><s:submit value="ショット" cssClass="btn"/></td>
+		</tr>
 	</table>
 </s:form>
 </body>

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.btnArea{
+	float:left;
+}
+
+.btn{
+	height:25px;
+	display: block;
+	color:black;
+	width:10vw;
+	background-color:#FA8072;
+	border-radius: 10% / 20%;
+	box-shadow: 5px 3px 2px 1px #660055;
+}
+
+table, td.shot, th.shot{
+	border:medium #880000 outset;
+}

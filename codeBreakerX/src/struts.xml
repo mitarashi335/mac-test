@@ -5,6 +5,7 @@
 "https://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+	<!-- <constant name="struts.ui.theme" value="simple" /> -->
 	<constant name="struts.devMode" value="true"/>
 	<package name="com.practice.action" extends="struts-default">
 
@@ -16,32 +17,32 @@
 		<result name="success">second.jsp</result>
 		<result name="error">first.jsp</result>
 		<result name="clear">clear.jsp</result>
-		<result name="sessionTimeOut">systemError.jsp</result>
+		<result name="Deportation">systemError.jsp</result>
 	</action>
 
 	<action name="SecondShotAction" class="com.misaki.cobr.action.SecondShotAction" method="execute">
 		<result name="success">third.jsp</result>
 		<result name="error">second.jsp</result>
 		<result name="clear">clear.jsp</result>
-		<result name="sessionTimeOut">systemError.jsp</result>
+		<result name="Deportation">systemError.jsp</result>
 	</action>
 	<action name="ThirdShotAction" class="com.misaki.cobr.action.ThirdShotAction" method="execute">
 		<result name="success">forth.jsp</result>
 		<result name="error">third.jsp</result>
 		<result name="clear">clear.jsp</result>
-		<result name="sessionTimeOut">systemError.jsp</result>
+		<result name="Deportation">systemError.jsp</result>
 	</action>
 	<action name="ForthShotAction" class="com.misaki.cobr.action.ForthShotAction" method="execute">
 		<result name="success">fifth.jsp</result>
 		<result name="error">forth.jsp</result>
 		<result name="clear">clear.jsp</result>
-		<result name="sessionTimeOut">systemError.jsp</result>
+		<result name="Deportation">systemError.jsp</result>
 	</action>
 	<action name="FifthShotAction" class="com.misaki.cobr.action.FifthShotAction" method="execute">
 		<result name="success">notClear.jsp</result>
 		<result name="error">fifth.jsp</result>
 		<result name="clear">clear.jsp</result>
-		<result name="sessionTimeOut">systemError.jsp</result>
+		<result name="Deportation">systemError.jsp</result>
 	</action>
 	<action name="RankingAction" class="com.misaki.cobr.action.RankingAction" method="execute">
 		<result name="success">ranking.jsp</result>

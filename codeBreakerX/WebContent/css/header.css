@@ -1,17 +1,24 @@
 @charset "UTF-8";
 
-#title{
-	height:10vh;
-	width:100vw;
-	color:lightsalmon;
-	font-size:10vh;
-}
 #header{
 	height:20vh;
 	background-color:#800000;
 }
+
+#title{
+	height:12vh;
+	width:100vw;
+	color: white;
+	background: -webkit-linear-gradient(-45deg, #800000 0%, #FFE4E1 10%, #FFA07A 40%, #E9967A 55%, #A52A2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-size:10vh;
+	padding-left:10px;
+}
+
 #subtitle{
 	height:5vh;
 	color:lightsalmon;
 	font-size:5vh;
+	padding-left:15px;
 }

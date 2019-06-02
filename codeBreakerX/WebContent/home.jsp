@@ -6,13 +6,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 <link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="./css/common.css">
 <title>スタート画面</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
 <jsp:include page="header.jsp"/>
-<h3>3桁の数字を当てるゲーム</h3>
+<h3>3桁の数字の位置を当てるゲーム</h3>
 <div id="explain">プレイヤーが３桁の数字を入力(ショット)して、<br>
 	数字のみを当てれば<div class="emphasis">Blow</div><br>
 	数字と桁数(位置)を当てれば<div class="emphasis">Hit</div><br>
@@ -23,21 +24,21 @@
 <div class="A"><h4>一投目</h4>
 1桁目=5, 2桁目=2, 3桁目=4<br>
 このショットで<br>
-Hit:1<br>
-Blow:2<br>
-の場合,数字３つは合っているが、<br>
+Hit:0<br>
+Blow:3<br><br>
+この場合,数字３つは合っているが、<br>
 位置が合っていない(非常に惜しい)状態。
 </div>
 
 <div id="under">
 	<div class="sample">
-		<s:submit value="見本" class="btn"/>
+		<s:submit value="見本" cssClass="btn"/>
 	</div>
-	<s:form action="StartAction">
-		<s:submit value="START" class="btn"/>
-	</s:form>
+	<form action="StartAction">
+		<s:submit value="START" cssClass="btn" />
+	</form>
 	<form action="FinRankingAction">
-		<s:submit value="ランキングへ" class="btn" />
+		<s:submit value="ランキングへ" cssClass="btn" />
 	</form>
 </div>
 	<script src="./js/home.js"></script>

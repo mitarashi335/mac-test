@@ -1,25 +1,30 @@
 @charset "UTF-8";
 
+h3{
+	padding-left:10px;
+}
 #explain{
 	float:left;
-	height: 60vh;
+	height: 60%;
 	width: 45%;
     text-align: center;
     font-size: 15px;
     font-weight:bold;
     border:1px solid red;
+    background-color:#fa8072;
 }
 
 .emphasis{
-    font-size: 5vh;
+    font-size: 20px;
     color: #800000;
 }
 .A{
-	height: 60vh;
+	height:60%;
 	float:left;
 	width: 30%;
 	opacity: 0.0;
 	text-align: center;
+	font-size: 15px;
 	border:1px solid red;
 	background-color:#fa8072;
 }
@@ -31,9 +36,5 @@
 	width:auto;
 }
 .btn{
-	height:2vh
-	display: block;
-	color:black;
-	width:8vw;
-	background-color:#FA8072;
+	margin:4px;
 }

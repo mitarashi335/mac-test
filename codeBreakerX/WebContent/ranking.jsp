@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./css/common.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
 			<td><s:textfield name="rankName" value=""/></td>
 		</tr>
 	</table>
-	<s:submit value="登録" />
+	<s:submit value="登録" cssClass="btn"/>
 </s:form>
 </body>
 </html>
