@@ -5,7 +5,6 @@
 "https://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	<!-- <constant name="struts.ui.theme" value="simple" /> -->
 	<constant name="struts.devMode" value="true"/>
 	<package name="com.practice.action" extends="struts-default">
 

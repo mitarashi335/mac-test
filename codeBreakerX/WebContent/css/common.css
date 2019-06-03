@@ -9,6 +9,7 @@
 	display: block;
 	color:black;
 	width:10vw;
+	margin:4px;
 	background-color:#FA8072;
 	border-radius: 10% / 20%;
 	box-shadow: 5px 3px 2px 1px #660055;
@@ -16,4 +17,5 @@
 
 table, td.shot, th.shot{
 	border:medium #880000 outset;
+	width:300px;
 }

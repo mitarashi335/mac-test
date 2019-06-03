@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#Excelent{
+	color: white;
+	background: -webkit-linear-gradient(-45deg, #800000 0%, #FFE4E1 10%, #FFA07A 40%, #E9967A 55%, #A52A2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#Nice{
+	color: white;
+	background: -webkit-linear-gradient(-45deg, #800000 0%, #FFE4E1 10%, #FFA07A 40%, #E9967A 55%, #A52A2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#Good{
+	color: white;
+	background: -webkit-linear-gradient(-45deg, #800000 0%, #FFE4E1 10%, #FFA07A 40%, #E9967A 55%, #A52A2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
